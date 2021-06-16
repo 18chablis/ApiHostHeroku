@@ -26,3 +26,5 @@ Route::post('addProduct', [ProductController::class, 'addProduct']);
 Route::get('product', [ProductController::class, 'index']);
 Route::delete('delete/{id}', [ProductController::class, 'delete']);
 Route::get('product/{id}', [ProductController::class,'getSingleProduct']);
+Route::put('product/{id}', [ProductController::class, 'updateProduct']);
+Route::get('search/{key}', [ProductController::class, 'searchProduct']);
